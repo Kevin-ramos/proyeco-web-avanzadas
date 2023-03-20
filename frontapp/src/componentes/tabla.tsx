@@ -14,7 +14,8 @@ const TableComponent = ({ data, columns }: Props) => {
             {
                 Header: '',
                 accessor: 'imageUrl',
-                Cell: ({ value }) => <img src={value} style={{ width: "150px", height: "150px" }} alt="row item" />,
+                Cell: ({ value }: { value: string }) =><img src={value} style={{ width: "150px", height: "150px" }} alt="row item" />,
+
             },
         ],
         [columns],
